@@ -88,7 +88,7 @@
 -- SELECT COUNT(*) FROM commandes WHERE EXTRACT(YEAR FROM date_commande)=2025;
 
 -- Question 9 :
--- SELECT categorie, MIN(prix) as prix_min, MAX(prix) as prix_max, ROUND(AVG(prix),2) as prix_moyen FROM produits GROUP BY categorie;
+-- SELECT categorie, MIN(prix) as prix_min, MAX(prix) as prix_max, ROUND(AVG(prix),2) as prix_moyen FROM produits INNER JOIN lignes_commandes ON produits.produit_id=lignes_commandes.produit_id GROUP BY categorie;
 
 -- Question 10 : 
 -- SELECT * FROM produits WHERE stock%5=0;
