@@ -153,5 +153,5 @@ FROM produits p
 
 
 
-
-
+-- ##### BDD #####
+CREATE DATABASE bibliotheque;
